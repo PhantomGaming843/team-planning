@@ -1,0 +1,19 @@
+name: Meeting notes
+description: Capture decisions and action items
+title: "[Meeting] YYYY-MM-DD <topic>"
+labels: ["meeting"]
+body:
+  - type: textarea
+    id: attendees
+    attributes:
+      label: Attendees
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: Key points and decisions
+  - type: textarea
+    id: actions
+    attributes:
+      label: Action Items
+      placeholder: "- [ ] owner — task"
