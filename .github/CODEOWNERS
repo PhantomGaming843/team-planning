@@ -1,0 +1,3 @@
+# Auto-assign reviewers by path (edit as needed)
+*       @your-org/maintainers
+/docs/  @your-org/docs-team
