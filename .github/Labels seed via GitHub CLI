@@ -1,0 +1,19 @@
+# Requires GitHub CLI (gh) and repo checked out
+# Create common labels quickly
+
+declare -A labels=(
+  [todo]="#808080"
+  [in-progress]="#1f6feb"
+  [blocked]="#d73a4a"
+  [review]="#a371f7"
+  [done]="#2da44e"
+  ["priority: high"]="#d73a4a"
+  ["priority: med"]="#fbca04"
+  ["priority: low"]="#a2eeef"
+  [meeting]="#0e8a16"
+  [question]="#d4c5f9"
+)
+
+for name in "${!labels[@]}"; do
+  gh label create "$name" --color "${labels[$name]}" --force
+done
